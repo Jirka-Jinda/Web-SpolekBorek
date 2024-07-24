@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Patrick Hand';
+    src: url(../../resources/fonts/Patrick_Hand/PatrickHand-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'Indie Flower';
+    src: url(../../resources/fonts/Indie_Flower/IndieFlower-Regular.ttf) format("truetype");
+}

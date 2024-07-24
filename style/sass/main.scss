@@ -1,0 +1,33 @@
+// Bootstrap variables def
+
+// 8dbc42
+$main-color: #B7CECE;
+$secondary-color: black;
+$font-color: black;
+$nav-pills-link-active-color: black;
+$component-active-color: black;
+$nav-link-hover-color: black;
+$main-border-radius: 12px;
+$nav-link-font-sizes: 1.4rem;
+
+// Colors
+$primary: $main-color;
+$link-color: $font-color;
+$link-hover-color: $main-color;
+
+// Components
+$card-bg: $main-color;
+$card-border-color: $secondary-color;
+$card-border-radius: $main-border-radius;
+$card-border-width: 3px;   
+
+
+// Typography
+$font-family-base: 'Patrick Hand';
+
+$nav-link-font-size: $nav-link-font-sizes;
+$dropdown-font-size:  $nav-link-font-sizes;
+$font-size-base: 1.2rem; 
+
+// Import
+@import '../../node_modules/bootstrap/scss/bootstrap.scss'

@@ -1,0 +1,25 @@
+:root {
+    /* 8dbc42 */
+    --primary: #E09F3E;
+    --secondary: black;
+    --background: white;
+    --font: black;
+}
+
+.delim-down {
+    border-bottom: solid var(--primary) 20px;
+}
+
+.delim-up {
+    border-top: solid var(--primary) 20px;
+}
+
+.body {
+    background-color: var(--background);
+}
+
+.card-title {
+    text-decoration: dashed underline var(--font);
+    text-underline-offset: 10px;
+    padding-bottom: 1rem;
+}

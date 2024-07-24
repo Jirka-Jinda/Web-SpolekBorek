@@ -1,0 +1,150 @@
+.carousel-desc {
+    position: absolute;
+    font-size: 2rem;
+    color: black;
+    top: 0;
+    margin: 4rem 0 0 10rem;
+}
+
+.icon-before {
+    min-width: fit-content;
+}
+
+.icon-before-big {
+    min-width: fit-content;
+}
+
+.icon-before::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 5px;
+}
+
+.icon-before-big::before {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 45px;
+    float: left;
+    margin-right: 12px;
+}
+
+/* ICONS */
+.icon-download::before {
+    background: url("../../resources/icons/download.png") no-repeat;
+    background-size: 30px;
+}
+
+.icon-gallery::before {
+    background: url("../../resources/icons/gallery.png") no-repeat;
+    background-size: 30px;
+}
+
+.icon-pen::before {
+    background: url("../../resources/icons/pen.png") no-repeat;
+    background-size: 30px;
+}
+
+.icon-calendar::before {
+    background: url("../../resources/icons/calendar.png") no-repeat;
+    background-size: 30px;
+}
+
+.icon-more::before {
+    background: url("../../resources/icons/more.png") no-repeat;
+    background-size: 30px;
+}
+
+/* BIG ICONS */
+.icon-pen-big::before {
+    background: url("../../resources/icons/pen.png") no-repeat;
+    background-size: 45px;
+}
+
+.icon-car-big::before {
+    background: url("../../resources/icons/car.png") no-repeat;
+    background-size: 45px;
+}
+
+.icon-info-big::before {
+    background: url("../../resources/icons/info.png") no-repeat;
+    background-size: 45px;
+}
+
+.icon-backpack-big::before {
+    background: url("../../resources/icons/backpack.png") no-repeat;
+    background-size: 45px;
+}
+
+.icon-document-big::before {
+    background: url("../../resources/icons/document.png") no-repeat;
+    background-size: 45px;
+}
+
+.icon-ring-big::before {
+    background: url("../../resources/icons/ring.png") no-repeat;
+    background-size: 45px;
+}
+
+.icon-mapm-big::before {
+    background: url("../../resources/icons/mapmarker.png") no-repeat;
+    background-size: 45px;
+}
+
+.icon-mapw-big::before {
+    background: url("../../resources/icons/mapwaypoint.png") no-repeat;
+    background-size: 45px;
+}
+
+.icon-address-big::before {
+    background: url("../../resources/icons/address.png") no-repeat;
+    background-size: 45px;
+}
+
+.icon-letterbox-big::before {
+    background: url("../../resources/icons/letterbox.png") no-repeat;
+    background-size: 45px;
+}
+
+.icon-gallery-big::before {
+    background: url("../../resources/icons/gallery.png") no-repeat;
+    background-size: 45px;
+}
+
+.icon-phone-big::before {
+    background: url("../../resources/icons/phone.svg") no-repeat;
+    background-size: 45px;
+}
+
+.icon-mail-big::before {
+    background: url("../../resources/icons/mail.svg") no-repeat;
+    background-size: 45px;
+}
+
+.icon-join-big::before {
+    background: url("../../resources/icons/join.png") no-repeat;
+    background-size: 45px;
+}
+
+.icon-house-big::before {
+    background: url("../../resources/icons/house.png") no-repeat;
+    background-size: 45px;
+}
+
+.icon-tree-big::before {
+    background: url("../../resources/icons/tree.png") no-repeat;
+    background-size: 45px;
+}
+
+.icon-team-big::before {
+    background: url("../../resources/icons/team.png") no-repeat;
+    background-size: 45px;
+}
+
+.icon-lightning-big::before {
+    background: url("../../resources/icons/lighting.png") no-repeat;
+    background-size: 45px;
+}

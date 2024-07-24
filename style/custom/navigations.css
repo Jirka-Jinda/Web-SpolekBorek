@@ -1,0 +1,16 @@
+.nav-item {
+    border-bottom: dashed var(--primary) 3px;
+}
+
+.item-active {
+    border: dashed var(--primary) 3px;
+    border-radius: 12px;
+}
+
+.headline {
+    text-decoration: none;
+}
+
+.headline > h1 {
+    font-size: x-large;
+}

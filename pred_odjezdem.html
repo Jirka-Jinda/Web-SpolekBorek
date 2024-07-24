@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Tábor Spolek Borek. Web s informacemi, registrací a kontakty pro děti a rodiče." name="description">
+        <meta content="spolek borek, tábor, registrace, informace, fotky, kontakty, adresa" name="keywords">
+        <meta content="Jiří Jinda" name="author">
+        <title>Spolek Borek</title>
+        <link rel="stylesheet" href="./style/custom/typo.css">
+        <link rel="stylesheet" href="./style/custom/layout.css">
+        <link rel="stylesheet" href="./style/custom/components.css">
+        <link rel="stylesheet" href="./style/custom/images.css">
+        <link rel="stylesheet" href="./style/custom/navigations.css">
+        <link rel="stylesheet" href="./style/custom/responsivity.css">
+        <link rel="stylesheet" href="./style/custom/styles.css">
+        <link rel="stylesheet" href="./style/css/main.min.css">
+    </head>
+    <body>
+        <div class="pb-2 delim-down">
+            <header class="d-flex justify-content-center">
+                <div class="d-flex justify-content-around flex-column">
+                    <div class="d-flex justify-content-evenly justify-content-md-start">
+                        <a class="link-hover" href="kontakty.html#tel"><img class="mx-2" src="./resources/icons/phone.svg" alt="Telefon" width="35"></a>
+                        <a class="link-hover" href="kontakty.html#mail"><img class="mx-2" src="./resources/icons/mail.svg" alt="Email" width="35"></a>
+                    </div>
+                    <div>
+                        <ul class="nav navbar nav-pills justify-content-around">
+                            <li class="nav-item dropdown mx-md-2 link-hover">
+                                <a class="nav-link dropdown-toggle p-0 p-md-2" id="regdropdown" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Registrace</a>
+                                    <div class="dropdown-menu" aria-labelledby="regdropdown">
+                                        <a class="dropdown-item" href="prihlaseni.html">Přihlášení na tábor</a>
+                                        <a class="dropdown-item" href="stazeni.html">Dokumenty ke stažení</a>
+                                    </div>
+                            </li>
+                            <li class="nav-item dropdown mx-md-2 link-hover item-active">
+                                <a class="nav-link dropdown-toggle p-0 p-md-2" id="regdropdown" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Letošní ročník</a>
+                                    <div class="dropdown-menu" aria-labelledby="regdropdown">
+                                        <a class="dropdown-item" href="informace.html">Informace</a>
+                                        <a class="dropdown-item active" href="pred_odjezdem.html">Před odjezdem</a>
+                                    </div>
+                            </li>
+                            <li class="nav-item mx-md-2 link-hover">
+                                <a class="nav-link p-0 p-md-2" href="vzkazovnik.html">Vzkazovník</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="reader-only">Letní tábor Spolek Borek</h1>
+                    <a class="only-md-elem headline mt-5" href="index.html"><img class="mx-auto" src="./resources/img/tent.png" alt="logo" width="60"><h1 class="text-center">Spolek Borek</h1></a>
+                    <a class="d-none d-md-block mt-md-4 mt-lg-0" href="index.html"><img src="./resources/img/ltsb.svg" alt="Letní tábor spolek Borek" width="300"></a>
+                </div>
+                <div class="d-flex justify-content-around flex-column">
+                    <div class="d-flex justify-content-evenly justify-content-md-end">
+                        <a class="link-hover" href="https://www.facebook.com/profile.php?id=100081086028970" target="_blank"><img class="mx-2" src="./resources/icons/facebook.svg" alt="Facebook" width="35"></a>
+                        <a class="link-hover" href="https://www.youtube.com/playlist?list=PLCbF2uP8MEYXYtyei8ASu8rdXngJ6vlIi" target="_blank"><img class="mx-2" src="./resources/icons/youtube.svg" alt="Youtube" width="35"></a>
+                    </div>
+                    <div class="justify-content-md-end">
+                        <ul class="nav navbar nav-pills justify-content-around">
+                            <li class="nav-item mx-md-2 link-hover">
+                                <a class="nav-link p-0 p-md-2" href="fotogalerie.html">Fotogalerie</a>
+                            </li>
+                            <li class="nav-item dropdown mx-md-2 link-hover">
+                                <a class="nav-link dropdown-toggle p-0 p-md-2" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Něco o táboře</a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <a class="dropdown-item" href="areal.html">Areál</a>
+                                    <a class="dropdown-item" href="okoli.html">Okolí</a>
+                                    <a class="dropdown-item" href="adresa.html">Adresa</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown mx-md-2 link-hover">
+                                <a class="nav-link dropdown-toggle p-0 p-md-2" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Něco o nás</a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <a class="dropdown-item" href="tym.html">Tým</a>
+                                    <a class="dropdown-item" href="klub.html">Klub instruktorů</a>
+                                    <a class="dropdown-item" href="kontakty.html">Kontakty</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <main>
+            <div class="section-header w-100"><h3>Před odjezdem</h3></div>
+            <div class="content d-flex">
+                <div class="card w-100">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title icon-before-big icon-info-big">Než k nám vyrazíte...</h4>
+                        <div class="d-flex justify-content-between flex-column">
+                            <p>Zkontrolujte, že při předání táborníka máte s sebou: </p>
+                            <ul>
+                                <li>Nutné <strong>léky</strong> i s popisem, jak mají být užívány.</li>
+                                <li>Vyplněné <strong>prohlášení o bezinfekčnosti</strong>, ke stažení v <a class="ref" href="stazeni.html">dokumentech</a>.</li>
+                            </ul>
+                            <p>A kromě <a class="ref" href="#ssebou">všech dalších věcí</a> zkontrolujte, že táborník má: </p>
+                            <ul>
+                                <li><strong>Spacák, karimatku a polštářek</strong> protože, kromě prostěradel, ostatní lůžkoviny na táboře k dispozici nemáme. Všem táborníkům se budeme snažit umožnit přespání pod širákem, proto je dobré karimatku mít s sebou.</li>
+                                <li>Vlastní <strong>hrníček</strong> na pití, který bude zůstávat po dobu tábora v jídelně – pokud možno jej označte jménem.</li>
+                                <li><strong>Láhev na pití</strong>, aby v lese při hrách mohli snadno uhasit žízeň.</li>
+                                <li>Alespoň drobné <strong>kapesné.</strong> V Horním Bradle se nachází prodejna potravin a je vítaným cílem táborníků.</li>
+                            </ul>
+                            <p>Rádi bychom Vás také poprosili o zvážení, zda si děti na tábor přivezou i mobilní telefon. Jedná se o věc vyšší hodnoty a tím, že ji dítě nechá doma, předchází riziku jejího poškození či ztráty. Navíc táborovou komunikaci pomocí naší internetové pošty shledáváme jako dostačující.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content d-flex">
+                <div class="card w-100">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title icon-before-big icon-car-big">Příjezd a odjezd</h4>
+                        <div class="d-flex justify-content-between flex-column">
+                            <p>Pokud k nám jedete poprvé, koukněte se na <a class="ref" href="adresa.html#adresa">mapu tábora a příjezdu</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content d-flex">
+                <div class="card w-100">
+                    <div id="ssebou" class="card-body d-flex flex-column">
+                        <div>
+                            <h4 class="card-title icon-before-big icon-backpack-big">A co s sebou?</h4>
+                            <p>Kompletní seznam všech potřebných věcí.</p>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <p>Oblečení:</p>
+                                    <ul>
+                                        <li>Spodní prádlo</li>
+                                        <li>Ponožky</li>
+                                        <li>Trička s krátkým rukávem</li>
+                                        <li>Trička s dlouhým rukávem</li>
+                                        <li>Mikiny</li>
+                                        <li>Tepláky</li>
+                                        <li>Kraťasy</li>
+                                        <li>Pyžamo</li>
+                                        <li>Bunda</li>
+                                        <li>Plášťenka</li>
+                                        <li>Pokrývka hlavy</li>
+                                        <li>Plavky</li>
+                                        <li>Bíle tričko - které je možné pomalovat</li>
+                                    </ul>
+                                    <p>Obuv:</p>
+                                    <ul>
+                                        <li>Tenisky - více párů</li>
+                                        <li>Sandále</li>
+                                        <li>Holínky</li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <p>Hygiena:</p>
+                                    <ul>
+                                        <li>Kartáček na zuby</li>
+                                        <li>Pasta na zuby</li>
+                                        <li>Sprchový gel</li>
+                                        <li>Šampon na vlasy</li>
+                                        <li>Gumičky - na dlouhé vlasy</li>
+                                        <li>Ručníky - do sprchy i na koupaliště</li>
+                                    </ul>
+                                    <p>Další:</p>
+                                    <ul>
+                                        <li>Opalovací krém</li>
+                                        <li>Repelent proti hmyzu</li>
+                                        <li>Baterka na svícení</li>
+                                        <li>Kapesníky</li>
+                                        <li>Hrneček na pití</li>
+                                        <li>Lahev na pití</li>
+                                        <li>Spacák</li>
+                                        <li>Polštářek</li>
+                                        <li>Karimatka</li>
+                                        <li>Psací potřeby</li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <li>Šátek na různé hry</li>
+                                        <li>Kapesné</li>
+                                    </ul>
+                                    <p>Diskotéka:</p>
+                                    <ul>
+                                        <li>Můžete holčičkám přibalit šaty nebo sukni a chlapcům košili apod.</li>
+                                    </ul>
+                                    <p>Tématický kostým:</p>
+                                    <ul>
+                                        <li>Kostým děti mít mohou a nemusí, moc rádi je v něm ale uvidíme!</li>
+                                    </ul>
+                                    <p>Elektronika:</p>
+                                    <ul>
+                                        <li>Poprosíme Vás o zvážení, zda si Vaše dítě vezme s sebou i mobilní telefon případně další elektroniku. Za poškození či ztrátu nemůžeme ručit! Naše pravidla jsou nastavena tak, že mobilní telefony od dětí vybíráme, uschováme do trezoru a na požádání, v době pauzy, vydáváme. </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="">
+            <div class="d-flex flex-column justify-content-evenly delim-up">
+                <ul class="nav nav-pills justify-content-center mt-2">
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="index.html">Úvod</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="prihlaseni.html">Přihlášení</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="stazeni.html">Ke stažení</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="informace.html">Informace</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover item-active">
+                        <a class="nav-link" href="pred_odjezdem.html">Před odjezdem</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="vzkazovnik.html">Vzkazovník</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="fotogalerie.html">Fotogalerie</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="areal.html">Areál</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="okoli.html">Okolí</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="adresa.html">Adresa</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="tym.html">Tým</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="klub.html">Klub instruktorů</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="kontakty.html">Kontakty</a>
+                    </li>
+                </ul>
+                <div id="footer_logo" class="d-flex flex-column flex-md-row justify-content-evenly my-4">
+                    <div>
+                        <div class="d-flex justify-content-center">
+                            <h5 class="pt-3 mx-4">Napište nám: </h5>
+                            <a class="link-hover" href="kontakty.html#tel"><img class="m-2 pt-1" src="./resources/icons/phone.svg" alt="Telefon" width="35"></a>
+                            <a class="link-hover" href="kontakty.html#mail"><img class="m-2 pt-1" src="./resources/icons/mail.svg" alt="Email" width="35"></a>
+                            <a class="link-hover" href="https://www.facebook.com/profile.php?id=100081086028970" target="_blank"><img class="m-2 pt-1" src="./resources/icons/facebook.svg" alt="Facebook" width="35"></a>
+                            <a class="link-hover" href="https://www.youtube.com/playlist?list=PLCbF2uP8MEYXYtyei8ASu8rdXngJ6vlIi" target="_blank"><img class="m-2 pt-1" src="./resources/icons/youtube.svg" alt="Youtube" width="35"></a>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <h5 class="pt-3 mx-4">Partner tábora:</h5>
+                        <img src="./resources/img/albi_logo.png" alt="Albi">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <p>Spolek Borek 2022 ©</p>
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

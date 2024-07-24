@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Tábor Spolek Borek. Web s informacemi, registrací a kontakty pro děti a rodiče." name="description">
+        <meta content="spolek borek, tábor, horní bradlo, registrace, informace, fotky, kontakty, adresa" name="keywords">
+        <meta content="Jiří Jinda" name="author">
+        <title>Spolek Borek</title>
+        <link rel="stylesheet" href="./style/custom/typo.css">
+        <link rel="stylesheet" href="./style/custom/layout.css">
+        <link rel="stylesheet" href="./style/custom/components.css">
+        <link rel="stylesheet" href="./style/custom/images.css">
+        <link rel="stylesheet" href="./style/custom/navigations.css">
+        <link rel="stylesheet" href="./style/custom/responsivity.css">
+        <link rel="stylesheet" href="./style/custom/styles.css">
+        <link rel="stylesheet" href="./style/css/main.min.css">
+        <script src="./js/script.js"></script>
+    </head>
+    <body>
+        <div class="pb-2 delim-down">
+            <header class="d-flex justify-content-center">
+                <div class="d-flex justify-content-around flex-column">
+                    <div class="d-flex justify-content-evenly justify-content-md-start">
+                        <a class="link-hover" href="kontakty.html#tel"><img class="mx-2" src="./resources/icons/phone.svg" alt="Telefon" width="35"></a>
+                        <a class="link-hover" href="kontakty.html#mail"><img class="mx-2" src="./resources/icons/mail.svg" alt="Email" width="35"></a>
+                    </div>
+                    <div>
+                        <ul class="nav navbar nav-pills justify-content-around">
+                            <li class="nav-item dropdown mx-md-2 link-hover">
+                                <a class="nav-link dropdown-toggle p-0 p-md-2" id="regdropdown" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Registrace</a>
+                                    <div class="dropdown-menu" aria-labelledby="regdropdown">
+                                        <a class="dropdown-item" href="prihlaseni.html">Přihlášení na tábor</a>
+                                        <a class="dropdown-item" href="stazeni.html">Dokumenty ke stažení</a>
+                                    </div>
+                            </li>
+                            <li class="nav-item dropdown mx-md-2 link-hover">
+                                <a class="nav-link dropdown-toggle p-0 p-md-2" id="regdropdown" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Letošní ročník</a>
+                                    <div class="dropdown-menu" aria-labelledby="regdropdown">
+                                        <a class="dropdown-item" href="informace.html">Informace</a>
+                                        <a class="dropdown-item" href="pred_odjezdem.html">Před odjezdem</a>
+                                    </div>
+                            </li>
+                            <li class="nav-item mx-md-2 link-hover">
+                                <a class="nav-link p-0 p-md-2" href="vzkazovnik.html">Vzkazovník</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="reader-only">Letní tábor Spolek Borek</h1>
+                    <a class="only-md-elem headline mt-5" href="index.html"><img class="mx-auto" src="./resources/img/tent.png" alt="logo" width="60"><h1 class="text-center">Spolek Borek</h1></a>
+                    <a class="d-none d-md-block mt-md-4 mt-lg-0" href="index.html"><img src="./resources/img/ltsb.svg" alt="Letní tábor spolek Borek" width="300"></a>
+                </div>
+                <div class="d-flex justify-content-around flex-column">
+                    <div class="d-flex justify-content-evenly justify-content-md-end">
+                        <a class="link-hover" href="https://www.facebook.com/profile.php?id=100081086028970" target="_blank"><img class="mx-2" src="./resources/icons/facebook.svg" alt="Facebook" width="35"></a>
+                        <a class="link-hover" href="https://www.youtube.com/playlist?list=PLCbF2uP8MEYXYtyei8ASu8rdXngJ6vlIi" target="_blank"><img class="mx-2" src="./resources/icons/youtube.svg" alt="Youtube" width="35"></a>
+                    </div>
+                    <div class="justify-content-md-end">
+                        <ul class="nav navbar nav-pills justify-content-around">
+                            <li class="nav-item mx-md-2 link-hover">
+                                <a class="nav-link p-0 p-md-2" href="fotogalerie.html">Fotogalerie</a>
+                            </li>
+                            <li class="nav-item dropdown mx-md-2 link-hover">
+                                <a class="nav-link dropdown-toggle p-0 p-md-2" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Něco o táboře</a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <a class="dropdown-item" href="areal.html">Areál</a>
+                                    <a class="dropdown-item" href="okoli.html">Okolí</a>
+                                    <a class="dropdown-item" href="adresa.html">Adresa</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown mx-md-2 link-hover">
+                                <a class="nav-link dropdown-toggle p-0 p-md-2" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Něco o nás</a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <a class="dropdown-item" href="tym.html">Tým</a>
+                                    <a class="dropdown-item" href="klub.html">Klub instruktorů</a>
+                                    <a class="dropdown-item" href="kontakty.html">Kontakty</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <main>
+            <!-- CAROUSEL -->
+            <div class="delim-down">
+                <div id="carousel_indicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel_indicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel_indicators" data-slide-to="1"></li>
+                        <li data-target="#carousel_indicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="./resources/img/Cely_tabor.jpg" alt="Taborove foto">
+                            <div class="carousel-caption d-none d-md-block">
+                                <a class="page-button" href="tym.html">Tábor s dlouholetou tradicí</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-interval="10000">
+                            <img class="d-block w-100" src="./resources/img/Vedouci_kostymy.jpg" alt="Tematicke foto">
+                            <div class="carousel-caption d-none d-md-block">
+                                <a class="page-button" href="informace.html#info">Pojeďte s námi!</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./resources/img/priroda.jpg" alt="Detske foto">
+                            <div class="carousel-caption d-none d-md-block">
+                                <a class="page-button" href="okoli.html">Léto strávené v přírodě</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel_indicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel_indicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only"></span>
+                    </a>
+                </div>
+            </div>
+            <!-- END CAROUSEL -->
+
+
+            <!-- CONTENT -->
+            <div class="content">
+
+                <div class="card mb-3 shadow">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-start my-auto">
+                            <img src="./resources/img/10den24.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Desátý den - Odpočinek v Pelle</h3>
+                                <p class="card-text">Dnes zůstali obyvatelé města Efezu ještě ve městě Pella. Počasí nebylo příznivé na cestu do Athén. Během dne se především odpočívalo a probíhala různá zábavná klání. Vše proto, aby se nabrala energie, protože následující den nás čeká cesta do Athén.</p>
+                                    <div class="d-flex justify-content-between">
+                                    <p class="card-text"><small class="text-muted">22. července 2024</small></p>
+                                    <a class="card-button my-auto mx-4 icon-before icon-gallery link-hover" href="https://eu.zonerama.com/SpolekBorek/Album/11791962">Fotogalerie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 shadow">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-start my-auto">
+                            <img src="./resources/img/9den24.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Devátý den - Pella</h3>
+                                <p class="card-text">Město Pella, krásné to historické město. V tomto městě proběhla zvláštní výměna. Několik bohů přeneslo na jeden den svou moc na několik obyvatel města Efez. Ti pak organizovali den a snažili se získat informace o tom, kde se může nacházet Diův blesk. Pomalu, ale jistě se hrdinové blíží k místu, které rozhodne o tom, zda bude blesk nalezen a Die bude opět spokojen. Jinak...</p>
+                                    <div class="d-flex justify-content-between">
+                                    <p class="card-text"><small class="text-muted">22. července 2024</small></p>
+                                    <a class="card-button my-auto mx-4 icon-before icon-gallery link-hover" href="https://eu.zonerama.com/SpolekBorek/Album/11788034">Fotogalerie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 shadow">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-start my-auto">
+                            <img src="./resources/img/8den24.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Osmý den - Olympijské hry</h3>
+                                <p class="card-text">Město Olympia. Rody a jejich zástupci se zúčastnili atletického sedmi boje, kde prokázaly svou sílu, vytrvalost, odhodlání, šikovnost, prostě vše, co se až dosud na své cestě naučili. Klání to bylo někdy tvrdé, ale vždy férové. Na konci her byl uhašen olympijský oheň a cesta pokračovala dál do města Pella.</p>
+                                    <div class="d-flex justify-content-between">
+                                    <p class="card-text"><small class="text-muted">22. července 2024</small></p>
+                                    <a class="card-button my-auto mx-4 icon-before icon-gallery link-hover" href="https://eu.zonerama.com/SpolekBorek/Album/11787158">Fotogalerie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card mb-3 shadow">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-start my-auto">
+                            <img src="./resources/img/7den24.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Sedmý den - Hydra</h3>
+                                <p class="card-text">Vlna veder zasáhla Řecké město Hydra. Nejlepší bylo se před ním schovat do chladivých mořských vln. A tak se šlo odpočívat k moři. Bylo to zapotřebí, protože následující den byla v plánu cesta do města Olympia. A zde se měly rody poměřit ve sportovních klání v rámci olympijských her.</p>
+                                    <div class="d-flex justify-content-between">
+                                    <p class="card-text"><small class="text-muted">21. července 2024</small></p>
+                                    <a class="card-button my-auto mx-4 icon-before icon-gallery link-hover" href="https://eu.zonerama.com/SpolekBorek/Album/11786850">Fotogalerie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 shadow">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-start my-auto">
+                            <img src="./resources/img/6den24.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Šestý den - Sparta</h3>
+                                <p class="card-text">Cesta naše hrdiny zavedla do města Sparta. Zde byla nejdříve sparťanská rozcvička a poté při úkolech proběhla příprava na odpolední bitvu. Zde se střetla vojska Sparťanů proti vojskům Heilótů. Byla to velkolepá bitva, po které bylo třeba večer doplnit energii a odpočinout si u vítězných ohňů.</p>
+                                    <div class="d-flex justify-content-between">
+                                    <p class="card-text"><small class="text-muted">19. července 2024</small></p>
+                                    <a class="card-button my-auto mx-4 icon-before icon-gallery link-hover" href="https://eu.zonerama.com/SpolekBorek/Album/11777812">Fotogalerie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 shadow">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-start my-auto">
+                            <img src="./resources/img/5den24.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Pátý den - Korint</h3>
+                                <p class="card-text">Aby obyvatelé Efezu byli stále fit, je třeba udržovat tělo i ducha v kondici. Není nad to si dát ráno lehkou rozcvičku: <a href="https://youtu.be/gHZwzOnExQw">podívejte se sami!</a></p>
+                                
+                                <p class="card-text">Počasí bylo dnes chladnější a na nebi mraky. Ale i přes toto počasí proběhlo ve městě Efez slavnostní focení jeho obyvatel a také bohů</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text"><small class="text-muted">17. července 2024</small></p>
+                                    <a class="card-button my-auto mx-4 icon-before icon-gallery link-hover" href="https://eu.zonerama.com/SpolekBorek/Album/11767126">Fotogalerie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 shadow">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-start my-auto">
+                            <img src="./resources/img/4den24.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Čtvrtý den - Théby</h3>
+                                <p class="card-text">Dle mytologie bylo město Théby částečně založeno díky dračím zubům. Draka naši hrdinové zabít nemuseli, ale bylo třeba získat dračí vejce a s jejich pomocí a s pomocí bohyně Artemis, opět obnovit slávu Théb. A tak začal boj o dračí vejce, které bylo nejdříve nutno dostat s výšin stromů na zem, k našim hrdinům</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text"><small class="text-muted">16. července 2024</small></p>
+                                    <a class="card-button my-auto mx-4 icon-before icon-gallery link-hover" href="https://eu.zonerama.com/SpolekBorek/Album/11765124">Fotogalerie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 shadow">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-start my-auto">
+                            <img src="./resources/img/3den24.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Třetí den - Delfy</h3>
+                                <p class="card-text">Obyvatelé města Efezu se přesunuly do Delf. V tomto městě se nachází jedna z nejznámějších věštíren Starobylého Řecka. Zde byla pronesena věštba, že cesta za dalším náročným úkolem vede do Théb. Takže bylo rozhodnuto, že tento den bude volnější, aby se nabrala energie a dostatek sil na nadcházející úkol ve městě Théby</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text"><small class="text-muted">16. července 2024</small></p>
+                                    <a class="card-button my-auto mx-4 icon-before icon-gallery link-hover" href="https://eu.zonerama.com/SpolekBorek/Album/11763674">Fotogalerie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 shadow">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-start my-auto">
+                            <img src="./resources/img/2den24.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Druhý den - Cesta na Olymp</h3>
+                                <p class="card-text">Po nočních deštích se ukázalo slunce a všichni obyvatelé města Efezu se v doprovodu bohů vydali na horu Olymp za Diem. Ten byl stále velmi naštvaný, ale Bohyně Héra mu diplomaticky vysvětlila, že pokud může někdo najít blesk, tak jedině obyvatelé města Efez. Die jim dal na splnění úkolů 12 dní. Po návratu z Olympu již na naše odvážlivce čekal první úkol dle pověsti --- 12 úkolů pro Herakla --- Od nalezení Diova blesku tedy usilují městské rody a to:</p>
+                                <p>HÉRAKLOVCI --- ARGONAUTI --- PERŠANÉ --- ATHÉŇANÉ --- TROJANÉ</p>
+                                <p>Uvidíme, který rod bude nakonec ten nejúspěšnější a kde se vlastně podaří najít Diův blesk</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text"><small class="text-muted">15. července 2024</small></p>
+                                    <a class="card-button my-auto mx-4 icon-before icon-gallery link-hover" href="https://eu.zonerama.com/SpolekBorek/Album/11755225">Fotogalerie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 shadow">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-start my-auto">
+                            <img src="./resources/img/1den24.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Příjezd - Příjezd do Efezu</h3>
+                                <p class="card-text">Příjezd dětí pod horu Olymp probíhalo za krásné slunečného počasí. Přivítali je zástupci rady města Efezu a vše vypadalo tak, jakoby to bohové již dávno předurčili. Ale vše se změnilo v podvečer téhož dne, kdy byl z Agory odcizen Diův blesk a Die se rozzuřil. Seslal na město déšť, hromy a blesky, které se nad městem proháněly do svítání dalšího dne</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text"><small class="text-muted">14. července 2024</small></p>
+                                    <a class="card-button my-auto mx-4 icon-before icon-gallery link-hover" href="https://eu.zonerama.com/SpolekBorek/Album/11749716">Fotogalerie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 shadow">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-start my-auto">
+                            <img src="./resources/img/megafon.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body ">
+                                <h3 class="card-title">Kapacita tábora je naplněna</h3>
+                                <p class="card-text">Kapacita tábora pro rok 2024 je naplněna a registrace byla uzavřena. Děkujeme všem za zájem a budeme se na vás těšit. Pokud se na vás letos nedostalo, doufáme, že váš zájem přetrvá a uvidíme se příští rok.</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text"><small class="text-muted">10. května 2024</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 shadow">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-start my-auto">
+                            <img src="./resources/img/Foto_minci.jpg" class="img-fluid rounded-start" alt="...">
+                            <img src="./resources/img/Foto_bohu.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body ">
+                                <h3 class="card-title">Mince pro převozníka</h3>
+                                <p class="card-text">Cesta do podsvětí není jen tak, Chárona je třeba uplatit. Který bude Váš oblíbený bůh a kterého si budete chtít naklonit nas svou stranu?</p>
+                                <p class="card-text">Který bude Váš oblíbený bůh a kterého si budete chtít naklonit nas svou stranu?</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text"><small class="text-muted">29. dubna 2024</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 shadow">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-start my-auto">
+                            <img src="./resources/img/bohove_mapa2_prispevek.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Cesta na Olymp</h3>
+                                <p class="card-text">Bůh Zeus (nebo též Die) již připravil pro smrtelníky úkoly, které musí splnit, aby mu dokázali, že jsou hodni cesty na Olymp. Ale ten nejtěžší úkol je zahalen tajemstvím...v podsvětí se něco hýbe, něco co zatím nechce být odhaleno...</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text"><small class="text-muted">3. dubna 2024</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 shadow">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-start my-auto">
+                            <img src="./resources/img/bohove_prispevek.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Řečtí bohové</h3>
+                                <p class="card-text">Božský Olymp se celý třese, mocný Zeús zuří, někdo mu ukradl jeho blesk. Blesk se musí najít, jinak všechny lidi stihne Diův božský hněv. Přijeďte do Antického Řecka, pod bájný Olymp a vyjdete se s pomocí bohů, hledat Diův blesk. Staňte se novodobými hrdiny Antického Řecka</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text"><small class="text-muted">27. prosince 2023</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 shadow">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-start my-auto">
+                            <img src="./resources/img/Prubeh_den14.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Závěrečný den</h3>
+                                <p class="card-text">Před Černou Bránou se shromáždil poslední odpor lidí, Elfů, Hobitů a Trpaslíků. Společně vyzvali Saurona a Sarumana na poslední boj, aby tak dali šanci Frodovi, vhodit prsten do hory Osudu. Brána se otevřela a hrdinům vyšla vstříc desetitisícová armáda skřetů. Náhle Aragon zvolal 
+                                    ..."Synové Gondoru, synové Rohanu, mí bratři; Vidím vám v očích stejný strach, který by vzal odvahu i mně.
+                                    Možná přijde den, kdy odvaha lidí selže.Kdy opustíme své přátele a zpřetrháme všechny svazky, Ale dnes to nebude, dnes budeme bojovat!" A poté vyběhl vstříc skřetům. Mezitím Hobití rod Bralů došel v doprovodu Froda a Sama k hoře Osudu a tunelem do hory vstoupil. Na Konci tunelu Frodo hodil prsten moci do ohně. Jen co prsten dopadl do lávové řeky, vychrlil se z hory modrý dým. Skřeti se v panice dali na útěk a hora Osudu poté vybuchla..."
+                                    
+                                    Tím končí náš příběh, který psali stateční Hobité z kraje. Bylo mi ctí bojovat po jejich boku, zažívat a prožívat jejich dobrodružství, vidět jejich radost i smutek. Každý příběh jednou končí a já jsem rád, že jsem mohl být součástí právě tohoto. A díky nim, mám konec pro moji knížku.
+                                    Sbohem a snad někdy Váš BILBO Pitlík</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text"><small class="text-muted">28. července 2023</small></p>
+                                    <a class="card-button my-auto mx-4 icon-before icon-gallery link-hover" href="https://eu.zonerama.com/SpolekBorek/Album/10126703">Fotogalerie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 shadow">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-start my-auto">
+                            <img src="./resources/img/Prubeh_den12.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Třináctý den - Černá brána</h3>
+                                <p class="card-text">Společenstvo po bitvě u Minas Tirith, dorazilo k Černé Bráně Mordoru. Ale ještě než se tak stalo, strhla se poslední rodová bitva, která určila vítězný rod Hobitů, který následujícího dne, pomohl Frodovi a Samovi donést prsten do hory Osudu. Který rod to nakonec dokázal?</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text"><small class="text-muted">27. července 2023</small></p>
+                                    <a class="card-button my-auto mx-4 icon-before icon-gallery link-hover" href="https://eu.zonerama.com/SpolekBorek/Album/10122806">Fotogalerie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 shadow">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-start my-auto">
+                            <img src="./resources/img/Prubeh_den12.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Dvanáctý obrácený den</h3>
+                                <p class="card-text">Sarumanovo kouzlení pod dohledem Sauronova oka způsobilo, že došlo k naprostému převrácení všeho, co dosud naši hrdinové znali. Naštěstí se podařilo hrstce nejstarších Hobitů kouzlení zablokovat a pustili se do obnovy pořádku. Vymysleli své vlastní kouzla, která byla potřeba seslat směrem k Sauronovu oku. Je cítit stále více, že se blíží velké rozuzlení našeho příběhu. Již brzy staneme pod horou Osudu v Mordoru.</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text"><small class="text-muted">26. července 2023</small></p>
+                                    <a class="card-button my-auto mx-4 icon-before icon-gallery link-hover" href="https://eu.zonerama.com/SpolekBorek/Album/10116257">Fotogalerie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card mb-3 shadow">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-start my-auto">
+                            <img src="./resources/img/Prubeh_den11.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Jedenáctý den - Bitva u bélého města</h3>
+                                <p class="card-text">Cesta společenstva spěje ke svému cíli. Dnešního dne dosáhli plání před městem Minas Tirith. Zde došlo k velké bitvě lidí, elfů, trpaslíků, skřetů a čarodějů. Skřeti byli poraženi a dali se na ústup k Černé bráně. Na druhé straně však padl král Theodén. Mezitím Frodo se Samem prošli kolem Černé Brány a horu osudu mají již na dohled. Avšak Sauronovo oko cítí přítomnost prstenu a tak Frodova cesta je stále těžší. Následující dva dny rozhodnou o sodu Společenstva, Hobitů i celé Středozemě...</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text"><small class="text-muted">25. července 2023</small></p>
+                                    <a class="card-button my-auto mx-4 icon-before icon-gallery link-hover" href="https://eu.zonerama.com/SpolekBorek/Album/10115812">Fotogalerie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card mb-3 shadow">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-start my-auto">
+                            <img src="./resources/img/Prubeh_den10.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Desátý den - Putování do Minas Tirith</h3>
+                                <p class="card-text">Společenstvo se vydalo na cestu z Helmova Žlebu k bílému městu Minas Tirith. Cesta vedla přes kopce, údolí, kolem řeky, až se podařilo dojít k velkému jezeru. Zde pod památným stromem se společenstvo posilnilo chutným obědem, osvěžilo se ve vodách jezera a pokračovalo dále ve své cestě. K večeru přišli na dohled městu a utábořili se. Dokonce jim Gandalf vyčaroval pohyblivé obrázky, u kterých si všichni odpočinuli.</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text"><small class="text-muted">24. července 2023</small></p>
+                                    <a class="card-button my-auto mx-4 icon-before icon-gallery link-hover" href="https://eu.zonerama.com/SpolekBorek/Album/10109042">Fotogalerie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 shadow">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-start my-auto">
+                            <img src="./resources/img/Prubeh_den9.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Devátý den - Zasloužený odpočinek</h3>
+                                <p class="card-text">Cesta Středozemí nenabízí moc možností k odpočinku, ale když se k němu naskytla příležitost, Hobiti i celé společenstvo ji plně využili. Lehké osvěžení ve vodách jezera Nenuial, bylo velmi příjemné. No a k večeru si dokonce někteří Hobité zahráli místní týmovou sportovní hru zvanou Branball. Bylo to zkrátka den, kdy se podařilo trochu vyčistit hlavu, zapomenout na tu náročnou cestu a nabrat energii na poslední úseky cesty, které budou zcela jistě velmi náročné.</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text"><small class="text-muted">23. července 2023</small></p>
+                                    <a class="card-button my-auto mx-4 icon-before icon-gallery link-hover" href="https://eu.zonerama.com/SpolekBorek/Album/10101157">Fotogalerie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 shadow">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-start my-auto">
+                            <img src="./resources/img/Prubeh_den8.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Osmý den - Rohanské planiny</h3>
+                                <p class="card-text">Frodo se Samem pokračovali odděleně o zbytku společenstva, které ve Fangorském lese potkalo někoho, koho nečekali. Byl to Gandal, ale již né Gandal Šedý, ale Gandalf Bílý. Gandalf, Aragorn, Legolas a Gimly společně přijeli do Rohanské říše, kde pomohli králi Theodénovi zbavit se kletby, kterou na něj uvalil Sarumam. Z Rohanu pak vedla jejich cesta i s dcerou krále Theodéna, Eowyn, do pevnosti v Helmově Žlebu. Zde se svedla velká bitva mezi lidmi, elfy a skřety. Naši Hobité pomáhali jak jen jim síly stačili a za úsvitu čtvrtého dne, byla s pomocí Gandalfa, armáda skřetů poražena. Naši hrdinové si vychutnali vítězství a poté se vydali na cestu blíže k Mordoru do města Minas Tirith...</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text"><small class="text-muted">22. července 2023</small></p>
+                                    <a class="card-button my-auto mx-4 icon-before icon-gallery link-hover" href="https://eu.zonerama.com/SpolekBorek/Album/10085011">Fotogalerie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 shadow">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-start my-auto">
+                            <img src="./resources/img/Prubeh_den7.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Sedmý den - Přepadení skřetů</h3>
+                                <p class="card-text">Poté, co si společenstvo odpočinulo u paní Galadriel, se vydalo na další část své cesty. V lesích u Rauroských vodopádů bylo ale přepadeno skřety. Nastala velká bitva, ve které nebyla nouze o velmi vyhrocené okamžiky. V průběhu bitvy se Frodo se Samem oddělili od ostatních a vydali se svou vlastní cestou. Po boji bylo třeba uklidnit vášně, aby mohl zbytek společenstva vykročit s čistou hlavou do další části své cesty ... směrem do Rohanské říše.</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text"><small class="text-muted">21. července 2023</small></p>
+                                    <a class="card-button my-auto mx-4 icon-before icon-gallery link-hover" href="https://eu.zonerama.com/SpolekBorek/Album/10082788">Fotogalerie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 shadow">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-start my-auto">
+                            <img src="./resources/img/Prubeh_den6.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Šestý den - Temný hvozd</h3>
+                                <p class="card-text">Společenstvo se před vstupem do Fangorského hvozdu posílilo vydatnou večeří a pak již vstoupilo do temného lesa. Hobiti se pohybovali velmi tiše, aby nevzbudili Odulu, velkého a velmi velmi starého pavouka. Tento pavouk měl kolem sebe zástupy menších pavouků, les se jimi doslova hemžil. Ale stateční Hobité i tuto zkoušku zvládli a na druhé straně lese se potkali s paní Galadriel, která je přivítala ve své lesní říši.</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text"><small class="text-muted">20. července 2023</small></p>
+                                    <a class="card-button my-auto mx-4 icon-before icon-gallery link-hover" href="https://eu.zonerama.com/SpolekBorek/Album/10078590">Fotogalerie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 shadow">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-start my-auto">
+                            <img src="./resources/img/Prubeh_den5.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Pátý den - Palantíry</h3>
+                                <p class="card-text">Hobiti, po ztrátě Gandalfa, pokračovali dále k lesní říši paní Galadriel. Při průchodu hustým lesem nacházeli Palantíry - neboli Vidoucí kameny. V jejich nevědomosti do nich začali nahlížet a tím na sebe přilákali pozornost skřetů. Naštěstí se jim podařilo se pomocí Palantírů domluvit a společně našli správnou cestu v lese a pokračují dále. Následujícího dne by výprava měla dorazit do království paní Galadriel, pokud v Temném Hvozdu nenarazí na ...</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text"><small class="text-muted">19. července 2023</small></p>
+                                    <a class="card-button my-auto mx-4 icon-before icon-gallery link-hover" href="https://eu.zonerama.com/SpolekBorek/Album/10070401">Fotogalerie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 shadow">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-start my-auto">
+                            <img src="./resources/img/Prubeh_den4.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Čtvrtý den - Morie</h3>
+                                <p class="card-text">Výprava se zastavila před branou Morie. Zde Hobiti svedli souboj s chobotnicí, která hlídala bránu. Nebyl to jednoduchý boj, ale nakonec se chobotnici podařilo zabít a cesta do dolů byla volná. Výprava tedy vstoupila do trpasličího města a pokračovala dále bludištěm chodeb a sálů. Blízko východu bylo nutno překročit můstek Khazad-dûm, ale zde se výpravě do cesty postavil Balrog. Gandalf s ním svedl souboj, kdy nakonec Balroga porazil, ale při boji se prolomil můstek a Gandal se i s Balrogem zřítil do hlubim temné propasti...</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text"><small class="text-muted">18. července 2023</small></p>
+                                    <a class="card-button my-auto mx-4 icon-before icon-gallery link-hover" href="https://eu.zonerama.com/SpolekBorek/Album/10066160">Fotogalerie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 shadow">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-start my-auto">
+                            <img src="./resources/img/Prubeh_den3.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Třetí den - Společenstvo prstenu</h3>
+                                <p class="card-text">Dnes Hobiti dorazili do Roklinky. Ještě než předstoupili před pána Elronda, nastal souboj s přízraky v blízkém lese. Souboj to byl velmi rychlý podařilo se při něm najít léčivé byliny pro Froda. Poté proběhla rada v královském paláci pána Elronda. Zde bylo řečeno, že prsten nemůže v Roklince zůstat a že musí být odnesen do Mordoru a vhozen do hory Osudu. A tak vzniklo společenstvo prstenu, do kterého se krom hobitů a Gandalfa přidal také trpaslík Gimli, elf Legolas, elfka Tauriel a Luthien, dále Aragorn a Boromir a také Frodo a Sam. Přítomna byla také dcera pána Elronda, Arwen. Pak všichni společně vyrazili z Roklinky směrem k horám, kde se nachází doly v Morii.</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text"><small class="text-muted">17. července 2023</small></p>
+                                    <a class="card-button my-auto mx-4 icon-before icon-gallery link-hover" href="https://eu.zonerama.com/SpolekBorek/Album/10061443">Fotogalerie</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 shadow">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-start my-auto">
+                            <img src="./resources/img/Prubeh_den2.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Druhý den - Bitva na Větrově</h3>
+                                <p class="card-text">Poté co Frodo se Samem odešli z Kraje, dostali se až na zříceninu hradu Větrov. Zde jim cestu zkřížil Černokněžný král Angmaru - Pán Nazgůlu. Ten poslal do Kraje 9 přízraků, kteří měli za úkol najít Froda a prsten moci mu vzít. V okolí Větrova se udála menší bitva, kde rody Hobitů statečně bojovaly proti přízrakům. Boj to byl úspěšný, ale Frodo byl zraněn. Naštěstí byla poblíž elfka Arwen, která jej vzala a nyní s ním ujíždí do Roklinky... Mezitím došlo pod Větrovem k vyhodnocení celé bitvy a předání ocenění.</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text"><small class="text-muted">16. července 2023</small></p>
+                                    <a class="card-button my-auto mx-4 icon-before icon-gallery link-hover" href="https://eu.zonerama.com/SpolekBorek/Album/10057403">Fotogalerie</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 shadow">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-start my-auto">
+                            <img src="./resources/img/Prubeh_den1.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">První den ve Středozemi</h3>
+                                <p class="card-text">Příjezd do Středozemě byl náročný a to zejména díky počasí. Slunce svítilo, hřálo až i pálilo. Jako kdyby Souron věděl, že se blíží něco velkého a z Mordoru na Hobity poslal vlnu veder. Ale to nemohlo statečné Hobity zastavit. Ti přijeli v dobré náladě a plní energie. Po přesunu do Kraje se všichni ubytovali a lehce odpočívali. Po večeři byla v kraji rozprava o tom, co na Hobity všechno čeká, na co si mají dát pozor a že prsten Moci už začal volat svého pána. Poté přišel Bilbo, který všechny pozval na oslavu svých 111. narozenin. Proběhlo malé občerstvení, přípitek a poté Bilbo splnil to, o čem mluvil již delší dobu a odešel. Gandalf předal prsten Frodovi a ten společně se Samem, vyrazil na cestu z Kraje. 
+                                    ...Vše ale pozorně sledoval Sauron prostřednictvím svého oka, které má bez přestání prohledává celou Středozem a hledá prsten moci a volá jej ke svému pánovi...</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text"><small class="text-muted">15. července 2023</small></p>
+                                    <a class="card-button my-auto mx-4 icon-before icon-gallery link-hover" href="https://eu.zonerama.com/SpolekBorek/Album/10053587">Fotogalerie</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 shadow">
+                    <div class="row g-0 text-start">
+                        <div class="col-md-4">
+                            <img src="./resources/img/jeden_prsten_detail.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Pán prstenu</h3>
+                                <p class="card-text">Prsten osudu se objevil a našel jej ten nejméně očekávaný obyvatel Středozemě "HOBIT". Ale který Hobit a z kterého rodu jej nakonec donese až do Hory osudu?</p>
+                                <p class="card-text"><small class="text-muted">6. července 2023</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 shadow">
+                    <div class="row g-0 text-start">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Mapa Středozemě</h3>
+                                <p class="card-text">Mapa Středozemě byla odkryta a s ní i plán naší cesty. Dle Gandalfa šedého jsou odvážní hobiti již připraveni. Teď už jen stačí počkat na dopis a dále je to už jen a jen na našich Hobitech jak celá pouť nakonec dopadne.</p>
+                                <p class="card-text"><small class="text-muted">20. června 2023</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-0">
+                        <div class="col mx-auto p-2">
+                            <img src="./resources/img/mapa_detail.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col mx-auto p-2">
+                            <img src="./resources/img/dopisy_hobit.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 shadow">
+                    <div class="row g-0 text-start">
+                        <div class="col-md-4">
+                            <img src="./resources/img/prsteny.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Prsteny byly ukovány</h3>
+                                <p class="card-text">Prsteny, prsteny a zase prsteny. Každému byl vyroben prsten, jen s prstenem bude možné se vydat na cestu do Středozemě...Ale je tu ještě jeden prsten, jenž byl zkut v Hoře Osudu, jenž praví...</p>
+                                <p class="font-italic">"Aš nazg durbatulûk, aš nazg gimbatul, aš nazg thrakatulûk, agh burzum-iši krimpatul."</p>
+                                <p class="font-italic">"Jeden prsten vládne všem, jeden jim všem káže, jeden všechny přivede, do temnoty sváže."</p>
+                                <p class="card-text"><small class="text-muted">2. května 2023</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 shadow">
+                    <div class="row g-0 text-start">
+                        <div class="col-md-4">
+                            <img src="./resources/img/kouzelnik.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">S jakou silou se spojíš?</h3>
+                                <p class="card-text">Bílá nebo černá, hodný nebo zlý, jaký je tvůj oblíbený čaroděj? Na naší pouti nám bude pomáhat dobrý čaroděj, ale překážky nám bude klást i zlý čaroděj. Tak či onak, kouzelné čarodějné hole již vstřebávají svou magickou energii.</p>
+                                <p class="card-text"><small class="text-muted">1. května 2023</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 shadow">
+                    <div class="row g-0 text-start">
+                        <div class="col-md-4">
+                            <img src="./resources/img/Mec_a_sekyra.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Přípravy probíhají</h3>
+                                <p class="card-text">Za 3 měsíce a kousek se rozběhne naše putování Středozemí. Příprava této cesty běží naplno. Od posledního příspěvku se lecos podařilo sehnat, vyrobit, vymyslet a naplánovat. Přemýšlím jak moc mám poodkrýt oponu příprav a naladit Vaše, naše táborníky na blížící se dobrodružství. Přeci jen, nechci je připravit o všechna ta překvapení :-). Hmm, ale něco málo určitě v nejbližší době na stránky vložíme. S blížícím se táborem se je budeme snažit více a více plnit příspěvky, ať je na co se těšit.</p>
+                                <p class="card-text"><small class="text-muted">6. dubna 2023</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 shadow">
+                    <div class="row g-0 text-start">
+                        <div class="col-md-4">
+                            <img src="./resources/img/megafon.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Kapacita tábora je naplněná</h3>
+                                <p class="card-text">Táborové kapacity pro ročník 2023 jsou momentálně zcela naplněné. Pokud se místo nečekaně uvolní, budeme Vás informovat prostřednictvím facebooku nebo webu.</p>
+                                <p class="card-text"><small class="text-muted">16. února 2023</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 shadow">
+                    <div class="row g-0 text-start">
+                        <div class="col-md-4">
+                            <img src="./resources/img/megafon.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Poslední místa</h3>
+                                <p class="card-text">Táborové kapacity jsou skoro naplněné. Máme aktuálně posledních <strong>7</strong> míst! Neváhejte a přihlaste se co nejdříve.</p>
+                                <p class="card-text"><small class="text-muted">1. února 2023</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+                <div class="card mb-3 shadow">
+                    <div class="row g-0 text-start">
+                        <div class="col-md-4">
+                            <img src="./resources/img/prani.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Sváteční přání</h3>
+                                <p class="card-text">Celý táborový tým vám přeje krásné prožití vánočních svátků, plno úspěchů, štěstí a zdraví v novém roce a budeme se na vás v létě opět těšit.</p>
+                                <p class="card-text"><small class="text-muted">25. prosince 2022</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>             
+                <div class="card mb-3 shadow">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-start">
+                            <img src="./resources/img/poster_top.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Téma dalšího ročníku</h3>
+                                <p class="card-text">Pokud jste byli zvědaví, v jakém duchu se ponese další ročník tábora, tady je odpověď. Pojďte se s námi toulat po Středozemi a prožívat nové zážitky. Budete malí hobiti, rychlí elfové nebo zlí orkové?</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text"><small class="text-muted">16. prosince 2022</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 shadow">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-start">
+                            <img src="./resources/img/rekonstrukce.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Renovace chatek v plném proudu!</h3>
+                                <p class="card-text">Jelikož se nám namnožily "stížnosti" na stav chatek na táboře, nemohli jsme tedy odolat a rozhodli se s tímto stavem něco udělat. Ve fotogalerii je náhled, jak některé chatky vypadaly/jí a následná rekonstrukce.</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text"><small class="text-muted">13. září 2022</small></p>
+                                    <a class="card-button my-auto mx-4 icon-before icon-gallery link-hover" href="fotogalerie.html#foto">Fotogalerie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center my-4 ">
+                <a id="ShowMoreButton" class="page-button my-auto mx-4 icon-before icon-more link-hover background-primary" style="font-size: inherit;" onclick="ShowCards()">Zobrazit starší</a>
+            </div>
+            <!-- END CONTENT -->
+        </main>
+
+
+        <!-- FOOTER -->
+        <footer class="">
+            <div class="d-flex flex-column justify-content-evenly delim-up">
+                <ul class="nav nav-pills justify-content-center mt-2">
+                    <li class="nav-item mx-1 link-hover item-active">
+                        <a class="nav-link" href="index.html">Úvod</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="prihlaseni.html">Přihlášení</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="stazeni.html">Ke stažení</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="informace.html">Informace</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="pred_odjezdem.html">Před odjezdem</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="vzkazovnik.html">Vzkazovník</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="fotogalerie.html">Fotogalerie</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="areal.html">Areál</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="okoli.html">Okolí</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="adresa.html">Adresa</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="tym.html">Tým</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="klub.html">Klub instruktorů</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="kontakty.html">Kontakty</a>
+                    </li>
+                </ul>
+                <div id="footer_logo" class="d-flex flex-column flex-md-row justify-content-evenly my-4">
+                    <div>
+                        <div class="d-flex justify-content-center">
+                            <h5 class="pt-3 mx-4">Napište nám: </h5>
+                            <a class="link-hover" href="kontakty.html#tel"><img class="m-2 pt-1" src="./resources/icons/phone.svg" alt="Telefon" width="35"></a>
+                            <a class="link-hover" href="kontakty.html#mail"><img class="m-2 pt-1" src="./resources/icons/mail.svg" alt="Email" width="35"></a>
+                            <a class="link-hover" href="https://www.facebook.com/profile.php?id=100081086028970" target="_blank"><img class="m-2 pt-1" src="./resources/icons/facebook.svg" alt="Facebook" width="35"></a>
+                            <a class="link-hover" href="https://www.youtube.com/playlist?list=PLCbF2uP8MEYXYtyei8ASu8rdXngJ6vlIi" target="_blank"><img class="m-2 pt-1" src="./resources/icons/youtube.svg" alt="Youtube" width="35"></a>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <h5 class="pt-3 mx-4">Partner tábora:</h5>
+                        <img src="./resources/img/albi_logo.png" alt="Albi">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <p>Spolek Borek 2022 ©</p>
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script>
+            const cards = document.getElementsByClassName('card');
+            function HideCards()
+            {
+                for (let index = 1; index < cards.length; index++) {
+                    const element = cards[index];
+                    element.style.display = 'none'
+                }
+            }
+            document.addEventListener('DOMContentLoaded', HideCards);
+            
+            var cardsShowedCount = 0;
+
+            function ShowCards()
+            {
+                let index = 1 + 3 * cardsShowedCount;
+                let treshhold = index + 3;
+                while(index < cards.length && index < treshhold)
+                {
+                    cards[index].style.display = 'block';
+                    index++;
+                }
+                cardsShowedCount++;
+
+                if (treshhold >= cards.length)
+                {
+                    var button = document.getElementById('ShowMoreButton');
+                    button.style.display = 'none';
+                }
+            }
+        </script>
+    </body>
+</html>				

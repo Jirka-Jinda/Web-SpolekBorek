@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Tábor Spolek Borek. Web s informacemi, registrací a kontakty pro děti a rodiče." name="description">
+        <meta content="spolek borek, tábor, registrace, informace, fotky, kontakty, adresa" name="keywords">
+        <meta content="Jiří Jinda" name="author">
+        <title>Spolek Borek</title>
+        <link rel="stylesheet" href="./style/custom/typo.css">
+        <link rel="stylesheet" href="./style/custom/layout.css">
+        <link rel="stylesheet" href="./style/custom/components.css">
+        <link rel="stylesheet" href="./style/custom/images.css">
+        <link rel="stylesheet" href="./style/custom/navigations.css">
+        <link rel="stylesheet" href="./style/custom/responsivity.css">
+        <link rel="stylesheet" href="./style/custom/styles.css">
+        <link rel="stylesheet" href="./style/css/main.min.css">
+    </head>
+    <body>
+        <div class="pb-2 delim-down">
+            <header class="d-flex justify-content-center">
+                <div class="d-flex justify-content-around flex-column">
+                    <div class="d-flex justify-content-evenly justify-content-md-start">
+                        <a class="link-hover" href="kontakty.html#tel"><img class="mx-2" src="./resources/icons/phone.svg" alt="Telefon" width="35"></a>
+                        <a class="link-hover" href="kontakty.html#mail"><img class="mx-2" src="./resources/icons/mail.svg" alt="Email" width="35"></a>
+                    </div>
+                    <div>
+                        <ul class="nav navbar nav-pills justify-content-around">
+                            <li class="nav-item dropdown mx-md-2 link-hover">
+                                <a class="nav-link dropdown-toggle p-0 p-md-2" id="regdropdown" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Registrace</a>
+                                    <div class="dropdown-menu" aria-labelledby="regdropdown">
+                                        <a class="dropdown-item" href="prihlaseni.html">Přihlášení na tábor</a>
+                                        <a class="dropdown-item" href="stazeni.html">Dokumenty ke stažení</a>
+                                    </div>
+                            </li>
+                            <li class="nav-item dropdown mx-md-2 link-hover">
+                                <a class="nav-link dropdown-toggle p-0 p-md-2" id="regdropdown" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Letošní ročník</a>
+                                    <div class="dropdown-menu" aria-labelledby="regdropdown">
+                                        <a class="dropdown-item" href="informace.html">Informace</a>
+                                        <a class="dropdown-item" href="pred_odjezdem.html">Před odjezdem</a>
+                                    </div>
+                            </li>
+                            <li class="nav-item mx-md-2 link-hover">
+                                <a class="nav-link p-0 p-md-2" href="vzkazovnik.html">Vzkazovník</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="reader-only">Letní tábor Spolek Borek</h1>
+                    <a class="only-md-elem headline mt-5" href="index.html"><img class="mx-auto" src="./resources/img/tent.png" alt="logo" width="60"><h1 class="text-center">Spolek Borek</h1></a>
+                    <a class="d-none d-md-block mt-md-4 mt-lg-0" href="index.html"><img src="./resources/img/ltsb.svg" alt="Letní tábor spolek Borek" width="300"></a>
+                </div>
+                <div class="d-flex justify-content-around flex-column">
+                    <div class="d-flex justify-content-evenly justify-content-md-end">
+                        <a class="link-hover" href="https://www.facebook.com/profile.php?id=100081086028970" target="_blank"><img class="mx-2" src="./resources/icons/facebook.svg" alt="Facebook" width="35"></a>
+                        <a class="link-hover" href="https://www.youtube.com/playlist?list=PLCbF2uP8MEYXYtyei8ASu8rdXngJ6vlIi" target="_blank"><img class="mx-2" src="./resources/icons/youtube.svg" alt="Youtube" width="35"></a>
+                    </div>
+                    <div class="justify-content-md-end">
+                        <ul class="nav navbar nav-pills justify-content-around">
+                            <li class="nav-item mx-md-2 link-hover item-active">
+                                <a class="nav-link p-0 p-md-2" href="fotogalerie.html">Fotogalerie</a>
+                            </li>
+                            <li class="nav-item dropdown mx-md-2 link-hover">
+                                <a class="nav-link dropdown-toggle p-0 p-md-2" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Něco o táboře</a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <a class="dropdown-item" href="areal.html">Areál</a>
+                                    <a class="dropdown-item" href="okoli.html">Okolí</a>
+                                    <a class="dropdown-item" href="adresa.html">Adresa</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown mx-md-2 link-hover">
+                                <a class="nav-link dropdown-toggle p-0 p-md-2" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Něco o nás</a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <a class="dropdown-item" href="tym.html">Tým</a>
+                                    <a class="dropdown-item" href="klub.html">Klub instruktorů</a>
+                                    <a class="dropdown-item" href="kontakty.html">Kontakty</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <main>
+            <div id="foto" class="section-header w-100"><h3>Fotogalerie</h3></div>
+            <div class="content d-flex flex-column">
+                <div class="card w-100">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title icon-before-big icon-gallery-big">Archiv fotek</h4>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6 col-md-3 mb-4">
+                                    <div class="card">
+                                        <a class="ref mx-auto" href="https://eu.zonerama.com/SpolekBorek/1275388">
+                                            <img class="w-100" src="/resources/img/Fotogalerie/2023.jpg" alt="foto">
+                                        </a>
+                                        <h3 class="mx-auto">2023</h3>
+                                        <h3 class="mx-auto">Pán Prstenů</h3>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 mb-4">
+                                    <div class="card">
+                                        <a class="ref mx-auto" href="https://eu.zonerama.com/SpolekBorek/1145473">
+                                            <img class="w-100" src="/resources/img/Fotogalerie/2022.jpg" alt="foto">
+                                        </a>
+                                        <h3 class="mx-auto">2022</h3>
+                                        <h3 class="mx-auto">Hry bez hranic</h3>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 mb-4">
+                                    <div class="card">
+                                        <a class="ref mx-auto" href="https://eu.zonerama.com/SpolekBorek/1300489">
+                                            <img class="w-100" src="/resources/img/Fotogalerie/2021.jpg" alt="foto">
+                                        </a>
+                                        <h3 class="mx-auto">2021</h3>
+                                        <h3 class="mx-auto">Superhrdinové</h3>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 mb-4">
+                                    <div class="card">
+                                        <a class="ref mx-auto" href="https://eu.zonerama.com/SpolekBorek/910156">
+                                            <img class="w-100" src="/resources/img/Fotogalerie/2020.jpg" alt="foto">
+                                        </a>
+                                        <h3 class="mx-auto">2020</h3>
+                                        <h3 class="mx-auto">Mafie</h3>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-md-3 mb-4">
+                                    <div class="card">
+                                        <a class="ref mx-auto" href="https://eu.zonerama.com/SpolekBorek/605891">
+                                            <img class="w-100" src="/resources/img/Fotogalerie/2019.jpg" alt="foto">
+                                        </a>
+                                        <h3 class="mx-auto">2019</h3>
+                                        <h3 class="mx-auto">Hvězdné války</h3>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 mb-4">
+                                    <div class="card">
+                                        <a class="ref mx-auto" href="https://eu.zonerama.com/SpolekBorek/605888">
+                                            <img class="w-100" src="/resources/img/Fotogalerie/2018.jpg" alt="foto">
+                                        </a>
+                                        <h3 class="mx-auto">2018</h3>
+                                        <h3 class="mx-auto">Z filmu do filmu</h3>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 mb-4">
+                                    <div class="card">
+                                        <a class="ref mx-auto" href="https://eu.zonerama.com/SpolekBorek/188553">
+                                            <img class="w-100" src="/resources/img/Fotogalerie/2017.jpg" alt="foto">
+                                        </a>
+                                        <h3 class="mx-auto">2017</h3>
+                                        <h3 class="mx-auto">Cesta kolem světa</h3>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 mb-4">
+                                    <div class="card">
+                                        <a class="ref mx-auto" href="https://eu.zonerama.com/SpolekBorek/605889">
+                                            <img class="w-100" src="/resources/img/Fotogalerie/2016.jpg" alt="foto">
+                                        </a>
+                                        <h3 class="mx-auto">2016</h3>
+                                        <h3 class="mx-auto">Hra o trůny</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-md-3 mb-4">
+                                    <div class="card">
+                                        <a class="ref mx-auto" href="https://eu.zonerama.com/SpolekBorek/605890">
+                                            <img class="w-100" src="/resources/img/Fotogalerie/2015.jpg" alt="foto_chatky">
+                                        </a>
+                                        <h3 class="mx-auto">2015</h3>
+                                        <h3 class="mx-auto">Expedice Atlantida</h3>
+                                    </div>
+                                </div>  
+                                <div class="col-6 col-md-3 mb-4">
+                                    <div class="card">
+                                        <a class="ref mx-auto" href="https://eu.zonerama.com/SpolekBorek/1300600">
+                                            <img class="w-100" src="/resources/img/Fotogalerie/2014.jpg" alt="foto">
+                                        </a>
+                                        <h3 class="mx-auto">2014</h3>
+                                        <h3 class="mx-auto">Sherlock Holmes</h3>
+                                    </div>
+                                </div>  
+                                <div class="col-6 col-md-3 mb-4">
+                                    <div class="card">
+                                        <a class="ref mx-auto" href="https://eu.zonerama.com/SpolekBorek/1302885">
+                                            <img class="w-100" src="/resources/img/Fotogalerie/2013.jpg" alt="foto_chatky">
+                                        </a>
+                                        <h3 class="mx-auto">2013</h3>
+                                        <h3 class="mx-auto">Hobradlo</h3>
+                                    </div>
+                                </div>  
+                                <div class="col-6 col-md-3 mb-4">
+                                    <div class="card">
+                                        <a class="ref mx-auto" href="https://eu.zonerama.com/SpolekBorek/1305654">
+                                            <img class="w-100" src="/resources/img/Fotogalerie/2012.jpg" alt="foto_chatky">
+                                        </a>
+                                        <h3 class="mx-auto">2012</h3>
+                                        <h3 class="mx-auto">Námořníci flotila HB</h3>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-md-3 mb-4">
+                                    <div class="card">
+                                        <a class="ref mx-auto" href="https://eu.zonerama.com/SpolekBorek/1305659">
+                                            <img class="w-100" src="/resources/img/Fotogalerie/2011.jpg" alt="foto_chatky">
+                                        </a>
+                                        <h3 class="mx-auto">2011</h3>
+                                        <h3 class="mx-auto">Divoký západ</h3>
+                                    </div>
+                                </div>  
+                                <div class="col-6 col-md-3 mb-4">
+                                    <div class="card">
+                                        <a class="ref mx-auto" href="https://eu.zonerama.com/SpolekBorek/1305660">
+                                            <img class="w-100" src="/resources/img/Fotogalerie/2010.jpg" alt="galerie_2010">
+                                        </a>
+                                        <h3 class="mx-auto">2010</h3>
+                                        <h3 class="mx-auto">Stroj času</h3>
+                                    </div>
+                                </div>  
+                                <div class="col-6 col-md-3 mb-4">
+                                    <div class="card">
+                                        <a class="ref mx-auto" href="https://eu.zonerama.com/SpolekBorek/1307165">
+                                            <img class="w-100" src="/resources/img/Fotogalerie/2009.jpg" alt="foto_chatky">
+                                        </a>
+                                        <h3 class="mx-auto">2009</h3>
+                                        <h3 class="mx-auto">Egypt</h3>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 mb-4">
+                                    <div class="card">
+                                        <a class="ref mx-auto" href="https://eu.zonerama.com/SpolekBorek/1307166">
+                                            <img class="w-100" src="/resources/img/Fotogalerie/2007.jpg" alt="galerie_2007">
+                                        </a>
+                                        <h3 class="mx-auto">2007</h3>
+                                        <h3 class="mx-auto">Rytíři kulatého stolu</h3>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="">
+            <div class="d-flex flex-column justify-content-evenly delim-up">
+                <ul class="nav nav-pills justify-content-center mt-2">
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="index.html">Úvod</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="prihlaseni.html">Přihlášení</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="stazeni.html">Ke stažení</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="informace.html">Informace</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="pred_odjezdem.html">Před odjezdem</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="vzkazovnik.html">Vzkazovník</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover item-active">
+                        <a class="nav-link" href="fotogalerie.html">Fotogalerie</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="areal.html">Areál</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="okoli.html">Okolí</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="adresa.html">Adresa</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="tym.html">Tým</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="klub.html">Klub instruktorů</a>
+                    </li>
+                    <li class="nav-item mx-1 link-hover">
+                        <a class="nav-link" href="kontakty.html">Kontakty</a>
+                    </li>
+                </ul>
+                <div id="footer_logo" class="d-flex flex-column flex-md-row justify-content-evenly my-4">
+                    <div>
+                        <div class="d-flex justify-content-center">
+                            <h5 class="pt-3 mx-4">Napište nám: </h5>
+                            <a class="link-hover" href="kontakty.html#tel"><img class="m-2 pt-1" src="./resources/icons/phone.svg" alt="Telefon" width="35"></a>
+                            <a class="link-hover" href="kontakty.html#mail"><img class="m-2 pt-1" src="./resources/icons/mail.svg" alt="Email" width="35"></a>
+                            <a class="link-hover" href="https://www.facebook.com/profile.php?id=100081086028970" target="_blank"><img class="m-2 pt-1" src="./resources/icons/facebook.svg" alt="Facebook" width="35"></a>
+                            <a class="link-hover" href="https://www.youtube.com/playlist?list=PLCbF2uP8MEYXYtyei8ASu8rdXngJ6vlIi" target="_blank"><img class="m-2 pt-1" src="./resources/icons/youtube.svg" alt="Youtube" width="35"></a>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <h5 class="pt-3 mx-4">Partner tábora:</h5>
+                        <img src="./resources/img/albi_logo.png" alt="Albi">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <p>Spolek Borek 2022 ©</p>
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
